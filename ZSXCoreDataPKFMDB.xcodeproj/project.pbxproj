@@ -16,6 +16,9 @@
 		077A5A84212D370D00EB179D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A5A83212D370D00EB179D /* main.m */; };
 		077A5A8E212D370D00EB179D /* ZSXCoreDataPKFMDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A5A8D212D370D00EB179D /* ZSXCoreDataPKFMDBTests.m */; };
 		077A5A99212D370E00EB179D /* ZSXCoreDataPKFMDBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A5A98212D370E00EB179D /* ZSXCoreDataPKFMDBUITests.m */; };
+		077A5AAB212D38C700EB179D /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A5AA9212D38C700EB179D /* Student+CoreDataClass.m */; };
+		077A5AAC212D38C700EB179D /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A5AAA212D38C700EB179D /* Student+CoreDataProperties.m */; };
+		C40A892452E1772906439B5E /* libPods-ZSXCoreDataPKFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C71FE9218515208B4F828F /* libPods-ZSXCoreDataPKFMDB.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		077A5A94212D370E00EB179D /* ZSXCoreDataPKFMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSXCoreDataPKFMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		077A5A98212D370E00EB179D /* ZSXCoreDataPKFMDBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSXCoreDataPKFMDBUITests.m; sourceTree = "<group>"; };
 		077A5A9A212D370E00EB179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077A5AA7212D38C700EB179D /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		077A5AA8212D38C700EB179D /* Student+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		077A5AA9212D38C700EB179D /* Student+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		077A5AAA212D38C700EB179D /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		55C71FE9218515208B4F828F /* libPods-ZSXCoreDataPKFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZSXCoreDataPKFMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7898F7A88C6AB9B19DF21DCC /* Pods-ZSXCoreDataPKFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSXCoreDataPKFMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZSXCoreDataPKFMDB/Pods-ZSXCoreDataPKFMDB.release.xcconfig"; sourceTree = "<group>"; };
+		BCF64E0F4E62533E7504A459 /* Pods-ZSXCoreDataPKFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZSXCoreDataPKFMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZSXCoreDataPKFMDB/Pods-ZSXCoreDataPKFMDB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40A892452E1772906439B5E /* libPods-ZSXCoreDataPKFMDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +98,8 @@
 				077A5A8C212D370D00EB179D /* ZSXCoreDataPKFMDBTests */,
 				077A5A97212D370E00EB179D /* ZSXCoreDataPKFMDBUITests */,
 				077A5A6F212D370B00EB179D /* Products */,
+				D7919BB2A074C159BBF0852C /* Pods */,
+				939953FC22652400DB9C580D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +116,7 @@
 		077A5A70212D370B00EB179D /* ZSXCoreDataPKFMDB */ = {
 			isa = PBXGroup;
 			children = (
+				077A5AA6212D38B600EB179D /* CoreData */,
 				077A5A71212D370B00EB179D /* AppDelegate.h */,
 				077A5A72212D370B00EB179D /* AppDelegate.m */,
 				077A5A74212D370B00EB179D /* ViewController.h */,
@@ -135,6 +149,34 @@
 			path = ZSXCoreDataPKFMDBUITests;
 			sourceTree = "<group>";
 		};
+		077A5AA6212D38B600EB179D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				077A5AA7212D38C700EB179D /* Student+CoreDataProperties.h */,
+				077A5AA8212D38C700EB179D /* Student+CoreDataClass.h */,
+				077A5AA9212D38C700EB179D /* Student+CoreDataClass.m */,
+				077A5AAA212D38C700EB179D /* Student+CoreDataProperties.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		939953FC22652400DB9C580D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C71FE9218515208B4F828F /* libPods-ZSXCoreDataPKFMDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7919BB2A074C159BBF0852C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCF64E0F4E62533E7504A459 /* Pods-ZSXCoreDataPKFMDB.debug.xcconfig */,
+				7898F7A88C6AB9B19DF21DCC /* Pods-ZSXCoreDataPKFMDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 077A5A9D212D370E00EB179D /* Build configuration list for PBXNativeTarget "ZSXCoreDataPKFMDB" */;
 			buildPhases = (
+				B73776EB365E184CCDE39ABA /* [CP] Check Pods Manifest.lock */,
 				077A5A6A212D370B00EB179D /* Sources */,
 				077A5A6B212D370B00EB179D /* Frameworks */,
 				077A5A6C212D370B00EB179D /* Resources */,
@@ -260,14 +303,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B73776EB365E184CCDE39ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZSXCoreDataPKFMDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		077A5A6A212D370B00EB179D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				077A5A7C212D370B00EB179D /* ZSXCoreDataPKFMDB.xcdatamodeld in Sources */,
+				077A5AAC212D38C700EB179D /* Student+CoreDataProperties.m in Sources */,
 				077A5A76212D370B00EB179D /* ViewController.m in Sources */,
 				077A5A84212D370D00EB179D /* main.m in Sources */,
+				077A5AAB212D38C700EB179D /* Student+CoreDataClass.m in Sources */,
 				077A5A73212D370B00EB179D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,9 +501,11 @@
 		};
 		077A5A9E212D370E00EB179D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF64E0F4E62533E7504A459 /* Pods-ZSXCoreDataPKFMDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6APNYPDCZ;
 				INFOPLIST_FILE = ZSXCoreDataPKFMDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,9 +519,11 @@
 		};
 		077A5A9F212D370E00EB179D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7898F7A88C6AB9B19DF21DCC /* Pods-ZSXCoreDataPKFMDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6APNYPDCZ;
 				INFOPLIST_FILE = ZSXCoreDataPKFMDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
